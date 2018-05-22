@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <RelativeLayout 
+        android:id="@+id/relative_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:padding="10dp">
+        
+        
+        <TextView 
+            android:id="@+id/episodelist_tv_premiumfeeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Premium Feeds"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            />
+        
+        <Button 
+            android:id="@+id/episodelist_btn_Feeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Feeds"
+            android:textColor="#FFFFFF"
+            />    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/relative_tv_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_below="@+id/relative_header">
+        
+        <TextView
+            android:id="@+id/episodelist_tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""          
+            android:textStyle="bold"
+            />   
+            
+         <TextView
+            android:id="@+id/episodelist_tv_subdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_below="@+id/episodelist_tv_detail"
+            android:text=""          
+            android:textStyle="bold"
+            />    
+    </RelativeLayout>
+     <RelativeLayout 
+        android:id="@+id/relative_listview_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/relative_tv_detail"
+        android:background="#FF00FF">
+         
+          <TextView
+            android:id="@+id/episodelist_tv_subdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Episode"          
+            android:textStyle="bold"/>
+         
+         </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/relative_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_listview_title">
+        
+        
+        <ListView 
+            android:id="@+id/episodelist_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

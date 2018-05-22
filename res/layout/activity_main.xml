@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+	>
+
+    
+    <TextView 
+        android:id="@+id/activity_main_tv_aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="About Us"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/activity_main_tv_title_melnyks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+        android:text="Melnyks"
+        android:textSize="40sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#FF0000"
+        
+        />
+    
+      <TextView 
+        android:id="@+id/activity_main_tv_title_chinese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_tv_title_melnyks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="Chinese"
+        android:textSize="40sp"
+         android:textColor="#FF0000"
+        />
+      
+      <TextView 
+        android:id="@+id/activity_main_tv_title_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_tv_title_chinese"
+        android:layout_centerHorizontal="true"
+        android:text="You'll be fluent in no time!"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp"
+        />
+    
+      
+      <Button 
+          android:id="@+id/activity_main_btn_login"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Login"
+          android:layout_below="@+id/activity_main_tv_title_subtitle"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="40dp"
+          android:layout_marginLeft="20dp"
+          />
+      
+       <Button 
+          android:id="@+id/activity_main_btn_signup"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Sign Up"
+          android:layout_below="@+id/activity_main_tv_title_subtitle"
+          android:layout_toLeftOf="@+id/activity_main_btn_login"
+          />
+</RelativeLayout>
